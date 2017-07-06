@@ -31,6 +31,7 @@ plugins = %w[
   tpope/vim-eunuch
   tpope/vim-rails
   tpope/vim-surround
+  tpope/vim-fugitive
   vim-airline/vim-airline
   vim-airline/vim-airline-themes
   vim-scripts/Css-Pretty
