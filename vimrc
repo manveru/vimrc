@@ -140,7 +140,6 @@ let g:jsx_ext_required = 0
 let g:neoformat_only_msg_on_error = 1
 let g:neoformat_enabled_javascript = ['prettiereslint']
 
-" \ 'args': [ '--stdin', '--prettier.single-quote', '--prettier.no-semi', '--prettier.trailing-comma', 'es5', '--prettier.jsx-bracket-same-line', '--eslint-ignore', '| head -c -1'],
 function! neoformat#formatters#javascript#prettiereslint() abort
     return {
         \ 'exe': 'prettier-eslint',

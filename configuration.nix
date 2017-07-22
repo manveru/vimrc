@@ -27,6 +27,7 @@ in {
         "vim-fugitive"
         "vim-gitgutter"
         "vim-go"
+        "vim-graphql"
         "vim-grepper"
         "vim-multiple-cursors"
         "vim-polyglot"

@@ -13,25 +13,26 @@ plugins = %w[
   editorconfig/editorconfig-vim
   ervandew/supertab
   fatih/vim-go
+  jparise/vim-graphql
   justinmk/vim-sneak
   kopischke/vim-fetch
-  sbdchd/neoformat
   mhinz/vim-grepper
   michalliu/sourcebeautify.vim
   morhetz/gruvbox
   neomake/neomake
   rhysd/vim-crystal
+  sbdchd/neoformat
   sheerun/vim-polyglot
-  Shougo/deoplete.nvim
   Shougo/denite.nvim
+  Shougo/deoplete.nvim
   Shougo/unite.vim
   Shougo/vimfiler.vim
   terryma/vim-multiple-cursors
   tpope/vim-bundler
   tpope/vim-eunuch
+  tpope/vim-fugitive
   tpope/vim-rails
   tpope/vim-surround
-  tpope/vim-fugitive
   vim-airline/vim-airline
   vim-airline/vim-airline-themes
   vim-scripts/Css-Pretty
