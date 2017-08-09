@@ -1,7 +1,10 @@
 { pkgs }:
 let plugins = pkgs.callPackage ./plugins.nix {};
 in {
-  customRC = ''${builtins.readFile ./vimrc}'';
+  customRC = ''
+    ${builtins.readFile ./vimrc}
+    ${builtins.readFile ./sort_unfolded.vim}
+  '';
   vam = {
     knownPlugins = pkgs.vimPlugins // plugins;
     pluginDictionaries = [{
@@ -29,6 +32,7 @@ in {
         "vim-go"
         "vim-graphql"
         "vim-grepper"
+        "vim-javascript"
         "vim-multiple-cursors"
         "vim-polyglot"
         "vim-rails"

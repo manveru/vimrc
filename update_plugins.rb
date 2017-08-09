@@ -20,6 +20,7 @@ plugins = %w[
   michalliu/sourcebeautify.vim
   morhetz/gruvbox
   neomake/neomake
+  pangloss/vim-javascript
   rhysd/vim-crystal
   sbdchd/neoformat
   sheerun/vim-polyglot

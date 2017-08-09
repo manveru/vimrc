@@ -78,7 +78,7 @@ xmap gs <plug>(GrepperOperator)
 
 " lessspace.vim
 
-let g:lessspace_blacklist = ['javascript']
+let g:lessspace_blacklist = ['javascript', 'yaml']
 
 " Multiple Cursors
 nnoremap <silent> <M-l> :MultipleCursorsFind <C-R>/<CR>
@@ -181,6 +181,21 @@ augroup END
 " highlight StatusLine term=reverse cterm=none ctermbg=7 ctermfg=0
 " autocmd InsertLeave * highlight StatusLine term=none cterm=none ctermbg=7 ctermfg=0
 " autocmd InsertEnter * highlight StatusLine term=reverse cterm=none ctermbg=1
+
+augroup javascript
+  set foldmethod=syntax
+  set conceallevel=1
+  let g:javascript_conceal_function             = "ƒ"
+  let g:javascript_conceal_null                 = "ø"
+  let g:javascript_conceal_this                 = "@"
+  let g:javascript_conceal_return               = "⇚"
+  let g:javascript_conceal_undefined            = "¿"
+  let g:javascript_conceal_NaN                  = "ℕ"
+  let g:javascript_conceal_prototype            = "¶"
+  let g:javascript_conceal_static               = "•"
+  let g:javascript_conceal_super                = "Ω"
+  let g:javascript_conceal_arrow_function       = "⇒"
+augroup END
 
 augroup lyx
   autocmd BufRead *.lyx set syntax=lyx foldmethod=syntax foldcolumn=3
