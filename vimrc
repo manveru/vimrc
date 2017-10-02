@@ -34,6 +34,7 @@ set matchtime=5
 set laststatus=2 linebreak
 set wrap
 set showbreak=«
+set relativenumber
 set scrolloff=5
 set sidescrolloff=5
 set sidescroll=1
@@ -83,6 +84,10 @@ let g:lessspace_blacklist = ['javascript', 'yaml']
 " Multiple Cursors
 nnoremap <silent> <M-l> :MultipleCursorsFind <C-R>/<CR>
 vnoremap <silent> <M-l> :MultipleCursorsFind <C-R>/<CR>
+
+" Testing
+
+let test#strategy = "neoterm"
 
 " Allow switching windows even if terminal is open.
 tnoremap <A-h> <C-\><C-n><C-w>h

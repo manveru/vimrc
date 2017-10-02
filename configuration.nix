@@ -1,10 +1,7 @@
 { pkgs }:
 let plugins = pkgs.callPackage ./plugins.nix {};
 in {
-  customRC = ''
-    ${builtins.readFile ./vimrc}
-    ${builtins.readFile ./sort_unfolded.vim}
-  '';
+  customRC = ''${builtins.readFile ./vimrc}'';
   vam = {
     knownPlugins = pkgs.vimPlugins // plugins;
     pluginDictionaries = [{
@@ -16,6 +13,7 @@ in {
         "gruvbox"
         "neoformat"
         "neomake"
+        "neoterm"
         "neovim-fuzzy"
         "sourcebeautify-vim"
         "supertab"
@@ -38,6 +36,7 @@ in {
         "vim-rails"
         "vim-sneak"
         "vim-surround"
+        "vim-test"
         "vim-wakatime"
         "vimfiler-vim"
       ];

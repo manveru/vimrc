@@ -13,8 +13,10 @@ plugins = %w[
   editorconfig/editorconfig-vim
   ervandew/supertab
   fatih/vim-go
+  janko-m/vim-test
   jparise/vim-graphql
   justinmk/vim-sneak
+  kassio/neoterm
   kopischke/vim-fetch
   mhinz/vim-grepper
   michalliu/sourcebeautify.vim

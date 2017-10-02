@@ -6,8 +6,8 @@ in {
     src = fetchFromGitHub {
       owner = "Shougo";
       repo = "denite.nvim";
-      rev = "244b940b911ade6eef82c7f5b0a6c50dd6b23560";
-      sha256 = "sha256:03ccsng4w6wcm07q8kl3ghmidyv6bkykc04j0xacl61k9jmbijfh";
+      rev = "d707fe20c5fe8281e90356f8cf146eef7c189da8";
+      sha256 = "1nimr0k3lca4849hz5ilvjn1y3d94nnzdyzkz1sx9i7a705438bk";
     };
   };
   deoplete-nvim = buildVimPlugin {
@@ -15,8 +15,8 @@ in {
     src = fetchFromGitHub {
       owner = "Shougo";
       repo = "deoplete.nvim";
-      rev = "f6352d155cba56dcfe154be1da378e5cfc745191";
-      sha256 = "sha256:0k7ff44i6cm6dc753f873waad6gh2zn0znrb9fzvqx33r3yaqhgn";
+      rev = "60bed29fb33cf32a3946509c3e983c2f4a239d40";
+      sha256 = "1ilinqrga5l279xlf30gzg9y8j8mwl6m80w0wh3vi8lca4k85rk4";
     };
   };
   unite-vim = buildVimPlugin {
@@ -24,8 +24,8 @@ in {
     src = fetchFromGitHub {
       owner = "Shougo";
       repo = "unite.vim";
-      rev = "ad15f96365b5cb43a45d0ca779df6a497f954f15";
-      sha256 = "0pigwfwyas4zdzrazk08p9bnbmi51np4gb0mf5dy434glw9rrvjz";
+      rev = "53d9f345a02976497cc99a4c7f5e4cf6114b6c28";
+      sha256 = "06drg0yfbkn126x48yj6j3hfvlln5ysajhpkxfdp06sdn1a478kv";
     };
   };
   vimfiler-vim = buildVimPlugin {
@@ -33,8 +33,8 @@ in {
     src = fetchFromGitHub {
       owner = "Shougo";
       repo = "vimfiler.vim";
-      rev = "91479d7b6b355f2fd2b66c7a2683ddc7023c773c";
-      sha256 = "sha256:0jghz9dqybq9rqvkcqza4qyqvcbnvbxbdx4x9izg6ipd3nsa6swa";
+      rev = "abb913ac67d77202e6170951ac627341c30600fe";
+      sha256 = "0zc07npvzqcmq557pd7wysz0pmkv693f6281033k0bhwjzrr4jfq";
     };
   };
   vim-gitgutter = buildVimPlugin {
@@ -51,8 +51,8 @@ in {
     src = fetchFromGitHub {
       owner = "cloudhead";
       repo = "neovim-fuzzy";
-      rev = "e6c1086c1882015f8475377e30a9c02eb018552a";
-      sha256 = "0zhbhc1pxi47w79b1wdqjs050xvmzwgysimh1df6vvnmiwajm4qa";
+      rev = "5d563596bb7be161797d79425bcadb0fb30308ce";
+      sha256 = "0b9z6xb62ayhkb8f2k3c2d0rklm4qb2s8pnqz5lbdkccrnclhah2";
     };
   };
   editorconfig-vim = buildVimPlugin {
@@ -60,8 +60,8 @@ in {
     src = fetchFromGitHub {
       owner = "editorconfig";
       repo = "editorconfig-vim";
-      rev = "14376e0e7f8118af7297daa8d4f5f261ca4efacb";
-      sha256 = "sha256:10ac0p06rb02078rr3idz5d7fn92w6721jl5l92bkjcx68di9hh4";
+      rev = "e96ecb8f863d6d1564b876e799eb7bd75e8181bc";
+      sha256 = "0421jgqa671vjpiah9zjf1q2k7nxa6zwn7y46h06yj78z9py93k1";
     };
   };
   supertab = buildVimPlugin {
@@ -78,8 +78,17 @@ in {
     src = fetchFromGitHub {
       owner = "fatih";
       repo = "vim-go";
-      rev = "dfd860471f777ec15779c33ab4917e27b21217e2";
-      sha256 = "sha256:1p4d7rjl68j2xzldsy1im8wxl943bpfbslqn2590fc8hr0hc55cn";
+      rev = "dcd3e3bfb92a5a292dfe63f75ba08522e936714a";
+      sha256 = "1qp2q3zkd252szfdjfyap5i5gf5i7p0qcf2kfd0lfhqrx1f5mvf5";
+    };
+  };
+  vim-test = buildVimPlugin {
+    name = "vim-test";
+    src = fetchFromGitHub {
+      owner = "janko-m";
+      repo = "vim-test";
+      rev = "c60a0e2679ecde4a929cbabf6573ba67524f1adf";
+      sha256 = "1br2c9j6is64d2rf8fybg23krsz1n9fxk3hz9lj5fv98dk579z53";
     };
   };
   vim-graphql = buildVimPlugin {
@@ -87,8 +96,8 @@ in {
     src = fetchFromGitHub {
       owner = "jparise";
       repo = "vim-graphql";
-      rev = "2f80582e1a0fe7d0a066299bfcc2261e55ef3a4b";
-      sha256 = "sha256:1p2brhbhxcvmd0x9vf0v6i04fqvpzx849kbg5da0yl960krfmz80";
+      rev = "9025fbe8c52053f1b8d6d164a3622d28fcb7e3ac";
+      sha256 = "1hy8x0fy2bri5jx50p30pjzb24pxiqjniaf586byfvinjmxy9w9a";
     };
   };
   vim-sneak = buildVimPlugin {
@@ -98,6 +107,15 @@ in {
       repo = "vim-sneak";
       rev = "a0610b8c9558358086fe993edff277a86f224747";
       sha256 = "024f475hzc9q341qr43r00nvgcv8z533f70csd7sl5jmw4gn6ggs";
+    };
+  };
+  neoterm = buildVimPlugin {
+    name = "neoterm";
+    src = fetchFromGitHub {
+      owner = "kassio";
+      repo = "neoterm";
+      rev = "701c9fb20ebac1c4d05410f8054fa004bc9ecba4";
+      sha256 = "1wblgjn4c6ai7jb46xv3vx4dpwbmxrs5wr1824z2blnb17glas7p";
     };
   };
   vim-fetch = buildVimPlugin {
@@ -114,8 +132,8 @@ in {
     src = fetchFromGitHub {
       owner = "mhinz";
       repo = "vim-grepper";
-      rev = "c12ea4d2234d561e0588061e710ef60faf9b5795";
-      sha256 = "sha256:10qwaywcffspbr2l9sx5010s6szcixwylicf4lncwg60v7n6ikhz";
+      rev = "030bf04a429204a9ec3e3a19f247ae795048fffa";
+      sha256 = "1fb4hbqc2kicy51ppsvmbf0awz2kbjyygiz2cnfnsfvd2s38zqnk";
     };
   };
   sourcebeautify-vim = buildVimPlugin {
@@ -132,8 +150,8 @@ in {
     src = fetchFromGitHub {
       owner = "morhetz";
       repo = "gruvbox";
-      rev = "127c9d14d4bac1bac31e328b835a8919a255789c";
-      sha256 = "19wg9143wvlynblpxm0cnk3ars2hgss3y745hligqgvfy308f7sm";
+      rev = "16504d394e145e0372d2491e02769d241350399a";
+      sha256 = "0yhas9lnsn9lfld37lvm5msmmkj6c7d8ajgarazc5rykbl8bw8rg";
     };
   };
   neomake = buildVimPlugin {
@@ -141,8 +159,8 @@ in {
     src = fetchFromGitHub {
       owner = "neomake";
       repo = "neomake";
-      rev = "71da3008b3453251c124517441a9180f85256922";
-      sha256 = "sha256:12nvpka5n7dkf0nrk33wh65lqfqn5fcjg6fcs24nvzd5dqmx1dr6";
+      rev = "06e26223625ff9b757e8b03b0f1e39b951968376";
+      sha256 = "145n69qzqmgdcgx9w6663vgqk9rkl5sqpkbvv2qvjnxj2bjm6307";
     };
   };
   vim-javascript = buildVimPlugin {
@@ -150,8 +168,8 @@ in {
     src = fetchFromGitHub {
       owner = "pangloss";
       repo = "vim-javascript";
-      rev = "dcb4e4762bed1942200391cb50cde2993178c9a6";
-      sha256 = "sha256:12s9gsm36vra5a4bwh0lp4h1b0ld6nmzcj36v6rh21cjv8yaqj82";
+      rev = "fcef6389a764b20b268b25dc3ce11eddbd484be6";
+      sha256 = "00d1hs9ixhsblzbfkdil5zwx2z4c3pni8f9q30kbc7bnbp6x7lbz";
     };
   };
   vim-crystal = buildVimPlugin {
@@ -159,8 +177,8 @@ in {
     src = fetchFromGitHub {
       owner = "rhysd";
       repo = "vim-crystal";
-      rev = "8e113d73708f8132e81e789598846c27ce734c13";
-      sha256 = "1wxz8xdpb1mxc9pnnaaxw3z2dp2sn273953s3p5yr52wm7c3zr1g";
+      rev = "dd5470e66a2294369c11b53fda0bc15294f09f3b";
+      sha256 = "15rk8kz9zpvjcbbxzmj3nd8lifz300q16fyh4975wl48g6prrad5";
     };
   };
   neoformat = buildVimPlugin {
@@ -168,8 +186,8 @@ in {
     src = fetchFromGitHub {
       owner = "sbdchd";
       repo = "neoformat";
-      rev = "255239e217ae124b1438c35967597b63db328820";
-      sha256 = "sha256:003zibii3bwdqb64qbv08pxhfmj2nmnvqm5hkdasbjjwmzp5kknk";
+      rev = "1aa4e9cb5c5f5b79f3680473ad0c378370d4526b";
+      sha256 = "12j2x0wcvrd5xxkb0raq1h230nbdxls9g7igfmv7kqx77xzpz145";
     };
   };
   vim-polyglot = buildVimPlugin {
@@ -177,8 +195,8 @@ in {
     src = fetchFromGitHub {
       owner = "sheerun";
       repo = "vim-polyglot";
-      rev = "8eab5f5403afc1c33a7593459a27f7ff625fa60b";
-      sha256 = "1k79wz10kx32nz2g97v297d703gvs7jhml7pvvww5l30zfj3jfai";
+      rev = "27903c5b8656c796564ef073c1ebe77a2f0154e1";
+      sha256 = "0p29j4jp97ywxl41r6x7gaj39gdd0dkzz9b06w94iwnbpd0xgfzc";
     };
   };
   vim-multiple-cursors = buildVimPlugin {
@@ -213,8 +231,8 @@ in {
     src = fetchFromGitHub {
       owner = "tpope";
       repo = "vim-fugitive";
-      rev = "913fff1cea3aa1a08a360a494fa05555e59147f5";
-      sha256 = "1qxzxk5szm25r7wi39n5s91fjnjgz5xib67risjcwhk6jdv0vzyd";
+      rev = "8f60d1d459362771cb68c0097565efdf52e62ec3";
+      sha256 = "107mmdy1j5dnh3f00hwf68459fks2jiqv44awvg7qjdxp7si0r7h";
     };
   };
   vim-rails = buildVimPlugin {
@@ -240,8 +258,8 @@ in {
     src = fetchFromGitHub {
       owner = "vim-airline";
       repo = "vim-airline";
-      rev = "96352f9b537c86507974e48e404380810bd35a36";
-      sha256 = "sha256:0m2y2irb7b6kzg5m1j2ps1rxj0hab4a363s164chiy97m27jl8cd";
+      rev = "27acd851a780c563cb4807fc0ea3af9caccbb585";
+      sha256 = "0z65m3ixcaxiifh3488pgxpkwb55flzs41lzjgr42i6jvf5d824p";
     };
   };
   vim-airline-themes = buildVimPlugin {
@@ -249,8 +267,8 @@ in {
     src = fetchFromGitHub {
       owner = "vim-airline";
       repo = "vim-airline-themes";
-      rev = "08c76e4cd0cdaa12c476ed03b920912173e31339";
-      sha256 = "sha256:0l3agy3vzldm0v4vwlrvj0q60bzhg813ip5dah9cplw2jvkhqr4b";
+      rev = "af3292dbbb6d8abe35d0ad50bd86b6ac6219abb7";
+      sha256 = "144vkwlc2f2y1b7xzgqvwaxv24l4sb13nqjqfn3jk851c3mpgb7y";
     };
   };
   css-pretty = buildVimPlugin {
@@ -267,8 +285,8 @@ in {
     src = fetchFromGitHub {
       owner = "wakatime";
       repo = "vim-wakatime";
-      rev = "a8e99ff8dc910d6bdf37a823f43afc9413dfad5a";
-      sha256 = "sha256:09rq7sffvizdvfw5aj6z0ib7nzhlqv1fcfc0pq6w9if00y4fvpfq";
+      rev = "cc46d817ce2c708b989f9ef459cf6e9a8e587c54";
+      sha256 = "0arz7is91mvy2ss6zw6irhvkzmilwdizdwm18aw31qiz8bsshi66";
     };
   };
   vim-codeclimate = buildVimPlugin {
