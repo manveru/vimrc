@@ -123,6 +123,10 @@ let g:neomake_elixir_elixir_maker = {
         \ '%f:%l: warning: %m'
       \ }
 
+" NeoComplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_auto_select = 1
+
 " airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
