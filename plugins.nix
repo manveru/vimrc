@@ -208,6 +208,15 @@ in {
       sha256 = "sha256:1ac5l5h138ns9z9ni4qbcykkg9yfpjjalk0g9wrra4rp0nlakaqk";
     };
   };
+  vim-abolish = buildVimPlugin {
+    name = "vim-abolish";
+    src = fetchFromGitHub {
+      owner = "tpope";
+      repo = "vim-abolish";
+      rev = "b6a8b49e2173ba5a1b34d00e68e0ed8addac3ebd";
+      sha256 = "sha256:0i9q3l7r5p8mk4in3c1j4x0jbln7ir9lg1cqjxci0chjjzfzc53m";
+    };
+  };
   vim-bundler = buildVimPlugin {
     name = "vim-bundler";
     src = fetchFromGitHub {
@@ -242,6 +251,15 @@ in {
       repo = "vim-rails";
       rev = "7206033fc2d7d53a531502ecd5a044ecdacc0354";
       sha256 = "1r92p3j9kmzffxsaqsbnsdy0wnwv4pjzgckgp4sgd5l6c7ikxq10";
+    };
+  };
+  vim-repeat = buildVimPlugin {
+    name = "vim-repeat";
+    src = fetchFromGitHub {
+      owner = "tpope";
+      repo = "vim-repeat";
+      rev = "070ee903245999b2b79f7386631ffd29ce9b8e9f";
+      sha256 = "sha256:1grsaaar2ng1049gc3r8wbbp5imp31z1lcg399vhh3k36y34q213";
     };
   };
   vim-surround = buildVimPlugin {

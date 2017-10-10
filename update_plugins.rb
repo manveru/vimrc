@@ -31,10 +31,12 @@ plugins = %w[
   Shougo/unite.vim
   Shougo/vimfiler.vim
   terryma/vim-multiple-cursors
+  tpope/vim-abolish
   tpope/vim-bundler
   tpope/vim-eunuch
   tpope/vim-fugitive
   tpope/vim-rails
+  tpope/vim-repeat
   tpope/vim-surround
   vim-airline/vim-airline
   vim-airline/vim-airline-themes
