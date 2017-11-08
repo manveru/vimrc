@@ -73,6 +73,11 @@ set viminfo='20,<1000,s100,h,n~/.vim/tmp/info
 set undodir=~/.vim/undo//
 set undofile
 
+" by default hide dotfiles (toggle with gh)
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+" let g:netrw_liststyle=3
+" autocmd FileType netrw setl bufhidden=delete
+
 " grepping
 nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
@@ -167,16 +172,12 @@ endfunction
 
 " Called once right before you start selecting multiple cursors
 function! Multiple_cursors_before()
-  if exists(':NeoCompleteLock')==2
-    exe 'NeoCompleteLock'
-  endif
+  let b:deoplete_disable_auto_complete = 1
 endfunction
 
 " Called once only when the multiple selection is canceled (default <Esc>)
 function! Multiple_cursors_after()
-  if exists(':NeoCompleteUnlock')==2
-    exe 'NeoCompleteUnlock'
-  endif
+  let b:deoplete_disable_auto_complete = 0
 endfunction
 
 augroup fmt

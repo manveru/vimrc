@@ -6,51 +6,9 @@ require 'fileutils'
 require 'pp'
 require 'json'
 
-# bogado/file-line
-plugins = %w[
-  airblade/vim-gitgutter
-  cloudhead/neovim-fuzzy
-  editorconfig/editorconfig-vim
-  ervandew/supertab
-  fatih/vim-go
-  janko-m/vim-test
-  jparise/vim-graphql
-  justinmk/vim-sneak
-  kassio/neoterm
-  kopischke/vim-fetch
-  mhinz/vim-grepper
-  michalliu/sourcebeautify.vim
-  morhetz/gruvbox
-  neomake/neomake
-  pangloss/vim-javascript
-  rhysd/vim-crystal
-  sbdchd/neoformat
-  sheerun/vim-polyglot
-  Shougo/denite.nvim
-  Shougo/deoplete.nvim
-  Shougo/unite.vim
-  Shougo/vimfiler.vim
-  terryma/vim-multiple-cursors
-  tpope/vim-abolish
-  tpope/vim-bundler
-  tpope/vim-eunuch
-  tpope/vim-fugitive
-  tpope/vim-rails
-  tpope/vim-repeat
-  tpope/vim-surround
-  vim-airline/vim-airline
-  vim-airline/vim-airline-themes
-  vim-scripts/Css-Pretty
-  wakatime/vim-wakatime
-  wfleming/vim-codeclimate
-]
-# thirtythreeforty/lessspace.vim
-# ctrlpvim/ctrlp.vim
-# nixprime/cpsm
-# Numkil/ag.nvim
-# Dkendal/fzy-vim
-# scrooloose/syntastic
-# Shougo/deoplete.nvim
+plugins = File.readlines('plugins.txt').map{|line|
+  /^(?<name>[^#]\S+)/ =~ line && name
+}
 
 existing =
   if File.file?('plugins.nix')
@@ -73,7 +31,7 @@ existing =
 
 packages = []
 
-plugins.sort.each do |plugin|
+plugins.compact.sort.each do |plugin|
   owner, repo, branch = plugin.split('/')
   branch ||= 'master'
   name = repo.gsub(/[^a-zA-Z]+/, '-').downcase
