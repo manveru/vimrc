@@ -8,8 +8,10 @@ in {
       names = [
         "css-pretty"
         "denite-nvim"
+        "deoplete-elm"
         "deoplete-nvim"
         "editorconfig-vim"
+        "elm-vim"
         "gruvbox"
         "neoformat"
         "neomake"
@@ -23,7 +25,6 @@ in {
         "vim-bundler"
         "vim-codeclimate"
         "vim-crystal"
-        "vim-dirvish"
         "vim-eunuch"
         "vim-fetch"
         "vim-fugitive"
@@ -40,7 +41,6 @@ in {
         "vim-surround"
         "vim-test"
         "vim-unimpaired"
-        "vim-vinegar"
         "vim-wakatime"
         "vimfiler-vim"
       ];

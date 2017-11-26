@@ -1,4 +1,5 @@
-default : plugins.nix configuration.nix
+default : plugins.nix configuration.nix vimrc
+	sudo nixos-rebuild switch
 
 plugins.nix : update_plugins.rb plugins.txt
 	ruby update_plugins.rb

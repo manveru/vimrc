@@ -75,8 +75,10 @@ set undofile
 
 " by default hide dotfiles (toggle with gh)
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
-" let g:netrw_liststyle=3
-" autocmd FileType netrw setl bufhidden=delete
+let g:netrw_liststyle=3
+let g:netrw_banner=0
+let g:netrw_browse_split=4
+autocmd FileType netrw setl bufhidden=delete
 
 " grepping
 nmap gs <plug>(GrepperOperator)
@@ -105,6 +107,15 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
 let g:deoplete#enable_at_startup = 1
+
+inoremap <silent><expr> <TAB>
+		\ pumvisible() ? "\<C-n>" :
+		\ <SID>check_back_space() ? "\<TAB>" :
+		\ deoplete#mappings#manual_complete()
+		function! s:check_back_space() abort "{{{
+		let col = col('.') - 1
+		return !col || getline('.')[col - 1]  =~ '\s'
+endfunction"}}}
 
 let g:neomake_elixir_enabled_makers = ['elixir']
 "let g:neomake_elixir_elixir_maker = {

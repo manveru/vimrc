@@ -1,9 +1,15 @@
 airblade/vim-gitgutter
+# bogado/file-line
 cloudhead/neovim-fuzzy
+# ctrlpvim/ctrlp.vim # slow
+# Dkendal/fzy-vim # fzf is faster
 editorconfig/editorconfig-vim
+ElmCast/elm-vim
+# ervandew/supertab
 fatih/vim-go
 janko-m/vim-test
 jparise/vim-graphql
+# justinmk/vim-dirvish
 justinmk/vim-sneak
 kassio/neoterm
 kopischke/vim-fetch
@@ -11,15 +17,20 @@ mhinz/vim-grepper
 michalliu/sourcebeautify.vim
 morhetz/gruvbox
 neomake/neomake
+# nixprime/cpsm
+# Numkil/ag.nvim # fzf is faster
 pangloss/vim-javascript
 rhysd/vim-crystal
 sbdchd/neoformat
+# scrooloose/syntastic # super slow
 sheerun/vim-polyglot
 Shougo/denite.nvim
 Shougo/deoplete.nvim
+pbogut/deoplete-elm
 Shougo/unite.vim
 Shougo/vimfiler.vim
 terryma/vim-multiple-cursors
+# thirtythreeforty/lessspace.vim # too intrusive
 tpope/vim-abolish
 tpope/vim-bundler
 tpope/vim-eunuch
@@ -28,19 +39,9 @@ tpope/vim-rails
 tpope/vim-repeat
 tpope/vim-surround
 tpope/vim-unimpaired
-justinmk/vim-dirvish
+# tpope/vim-vinegar # keeps open buffers issue
 vim-airline/vim-airline
 vim-airline/vim-airline-themes
 vim-scripts/Css-Pretty
 wakatime/vim-wakatime
 wfleming/vim-codeclimate
-
-tpope/vim-vinegar # keeps open buffers issue
-# bogado/file-line
-# ervandew/supertab
-# thirtythreeforty/lessspace.vim # too intrusive
-# ctrlpvim/ctrlp.vim # slow
-# nixprime/cpsm
-# Numkil/ag.nvim # fzf is faster
-# Dkendal/fzy-vim # fzf is faster
-# scrooloose/syntastic # super slow
