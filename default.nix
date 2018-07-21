@@ -1,11 +1,10 @@
 { config, pkgs, ... }:
 let
   myVimPlugins = pkgs.callPackage ./vim/plugins.nix {};
-  latestNixpkgs = import (/home/manveru/github/nixos/nixpkgs) {};
-  # latestNixpkgs = import (fetchTarball {
-  #   url = https://github.com/NixOS/nixpkgs/archive/d9a90a4dfbbb93ded54e9965a69346ffcb51ef5f.tar.gz;
-  #   sha256 = "11h1h338harlq4lyhnl8xv4yblfv78pqkxd1wncy85v9h94776iv";
-  # }) {};
+  latestNixpkgs = import ( fetchTarball {
+    url = https://github.com/nixos/nixpkgs-channels/archive/d7d31fea7e7eef8ff4495e75be5dcbb37fb215d0.tar.gz;
+    sha256 = "1ghb1nhgfx3r2rl501r8k0akmfjvnl9pis92if35pawsxgp115kv";
+  }) {};
   neovim = latestNixpkgs.neovim.override {
     vimAlias = true;
     extraPython3Packages = [
